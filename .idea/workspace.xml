@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d23823c-8843-4228-8ecb-c6d898751f0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +15,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw1-Linear-Regression/hw1-Linear-Regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
+            <state relative-caret-position="-161">
               <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -26,7 +26,14 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -49,12 +56,14 @@
         <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw1-Linear-Regression/hw1-Linear-Regression.py" />
         <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw2-Classification/hw2-Classification.py" />
         <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN.py" />
+        <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="width" value="1932" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="952" />
+    <option name="y" value="1" />
+    <option name="width" value="978" />
     <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -77,12 +86,6 @@
               <item name="machine-learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="machine-learning" type="462c0819:PsiDirectoryNode" />
               <item name="Lhy-DL-homeworks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning" type="462c0819:PsiDirectoryNode" />
-              <item name="Lhy-DL-homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="hw1-Linear-Regression" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machine-learning" type="b2602c69:ProjectViewProjectNode" />
@@ -120,7 +123,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hw1-Linear-Regression">
+  <component name="RunManager" selected="Python.hw4_RNN-Text_Sentiment_Classification">
     <configuration name="hw1-Linear-Regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machine-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,6 +138,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lhy-DL-homeworks/hw1-Linear-Regression/hw1-Linear-Regression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hw4_RNN-Text_Sentiment_Classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machine-learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,6 +214,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hw4_RNN-Text_Sentiment_Classification" />
         <item itemvalue="Python.hw1-Linear-Regression" />
         <item itemvalue="Python.pytorch-study" />
         <item itemvalue="Python.linear-regression" />
@@ -205,7 +231,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605681891204</updated>
-      <workItem from="1605681902072" duration="38434000" />
+      <workItem from="1605681902072" duration="43509000" />
     </task>
     <task id="LOCAL-00001" summary="pytorch practice">
       <created>1605682432055</created>
@@ -249,17 +275,25 @@
       <option name="project" value="LOCAL" />
       <updated>1608043187509</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="init hw4_RNN">
+      <created>1608047809727</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608047809728</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38434000" />
+    <option name="totallyTimeSpent" value="43509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <frame x="635" y="1" width="652" height="696" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15683104" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32659933" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -269,7 +303,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23076923" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25886524" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -296,6 +330,7 @@
     <SUITE FILE_PATH="coverage/machine_learning$linear_regression.coverage" NAME="linear-regression Coverage Results" MODIFIED="1605681982468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studying-practices" />
     <SUITE FILE_PATH="coverage/machine_learning$pytorch_study.coverage" NAME="pytorch-study Coverage Results" MODIFIED="1605693240743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studying-practices" />
     <SUITE FILE_PATH="coverage/machine_learning$hw1_Linear_Regression.coverage" NAME="hw1-Linear-Regression Coverage Results" MODIFIED="1606912728742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lhy-DL-homeworks/hw1-Linear-Regression" />
+    <SUITE FILE_PATH="coverage/machine_learning$hw4_RNN_Text_Sentiment_Classification.coverage" NAME="hw4_RNN-Text_Sentiment_Classification Coverage Results" MODIFIED="1608129054043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/studying-practices/linear-regression.py">
@@ -330,7 +365,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw1-Linear-Regression/hw1-Linear-Regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
+        <state relative-caret-position="-161">
           <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -338,8 +373,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/training_label.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
