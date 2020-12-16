@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d23823c-8843-4228-8ecb-c6d898751f0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,14 +25,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+            <state relative-caret-position="69">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-161">
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -57,14 +76,16 @@
         <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw2-Classification/hw2-Classification.py" />
         <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN.py" />
         <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py" />
+        <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/utils.py" />
+        <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="y" value="1" />
-    <option name="width" value="978" />
-    <option name="height" value="1044" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1943" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -123,7 +144,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hw4_RNN-Text_Sentiment_Classification">
+  <component name="RunManager" selected="Python.word2vec">
     <configuration name="hw1-Linear-Regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machine-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -212,8 +233,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="word2vec" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machine-learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.word2vec" />
         <item itemvalue="Python.hw4_RNN-Text_Sentiment_Classification" />
         <item itemvalue="Python.hw1-Linear-Regression" />
         <item itemvalue="Python.pytorch-study" />
@@ -231,7 +275,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605681891204</updated>
-      <workItem from="1605681902072" duration="43509000" />
+      <workItem from="1605681902072" duration="46199000" />
     </task>
     <task id="LOCAL-00001" summary="pytorch practice">
       <created>1605682432055</created>
@@ -282,28 +326,34 @@
       <option name="project" value="LOCAL" />
       <updated>1608047809728</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: utils for data">
+      <created>1608129419115</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608129419116</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43509000" />
+    <option name="totallyTimeSpent" value="46199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="635" y="1" width="652" height="696" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.32659933" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32659933" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" weight="0.32867134" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32978722" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25886524" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.48049647" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -324,11 +374,13 @@
     <MESSAGE value="lhy-hw1" />
     <MESSAGE value="start hw2" />
     <MESSAGE value="init hw4_RNN" />
-    <option name="LAST_COMMIT_MESSAGE" value="init hw4_RNN" />
+    <MESSAGE value="feat: utils for data" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: utils for data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machine_learning$linear_regression.coverage" NAME="linear-regression Coverage Results" MODIFIED="1605681982468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studying-practices" />
     <SUITE FILE_PATH="coverage/machine_learning$pytorch_study.coverage" NAME="pytorch-study Coverage Results" MODIFIED="1605693240743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studying-practices" />
+    <SUITE FILE_PATH="coverage/machine_learning$word2vec.coverage" NAME="word2vec Coverage Results" MODIFIED="1608131299845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN" />
     <SUITE FILE_PATH="coverage/machine_learning$hw1_Linear_Regression.coverage" NAME="hw1-Linear-Regression Coverage Results" MODIFIED="1606912728742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lhy-DL-homeworks/hw1-Linear-Regression" />
     <SUITE FILE_PATH="coverage/machine_learning$hw4_RNN_Text_Sentiment_Classification.coverage" NAME="hw4_RNN-Text_Sentiment_Classification Coverage Results" MODIFIED="1608129054043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN" />
   </component>
@@ -382,11 +434,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
