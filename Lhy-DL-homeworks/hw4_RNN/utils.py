@@ -1,7 +1,7 @@
 import torch
 
 # 加载数据
-def load_training_data(path='./training_label.txt') :
+def load_training_data(path='./data/training_label.txt') :
     # 有标签数据
     if 'training_label' in path:
         with open(path, "rt", encoding="utf-8") as f:
@@ -17,7 +17,7 @@ def load_training_data(path='./training_label.txt') :
             return x
 
 def load_testing_data():
-    with open('./testing_data.txt', "rt", encoding="utf-8") as f:
+    with open('./data/testing_data.txt', "rt", encoding="utf-8") as f:
         lines = f.readlines()
         X = [''.join(line.strip('\n').split(',')[1:]).strip() for line in lines[1:]]
         X = [line.split(' ') for line in X]
