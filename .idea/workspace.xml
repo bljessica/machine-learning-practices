@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d23823c-8843-4228-8ecb-c6d898751f0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/data_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +48,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-161">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="441">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/data_process.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,14 +95,15 @@
         <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/hw4_RNN-Text_Sentiment_Classification.py" />
         <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/utils.py" />
         <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py" />
+        <option value="$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/data_process.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1943" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="724" />
+    <option name="y" value="310" />
+    <option name="width" value="1005" />
+    <option name="height" value="629" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -275,7 +293,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605681891204</updated>
-      <workItem from="1605681902072" duration="46199000" />
+      <workItem from="1605681902072" duration="51149000" />
     </task>
     <task id="LOCAL-00001" summary="pytorch practice">
       <created>1605682432055</created>
@@ -333,17 +351,25 @@
       <option name="project" value="LOCAL" />
       <updated>1608129419116</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: word to vector">
+      <created>1608135603699</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608135603699</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46199000" />
+    <option name="totallyTimeSpent" value="51149000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="635" y="1" width="652" height="696" extended-state="0" />
+    <frame x="483" y="207" width="670" height="419" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32659933" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3251634" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -353,7 +379,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.48049647" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23226951" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -375,7 +401,8 @@
     <MESSAGE value="start hw2" />
     <MESSAGE value="init hw4_RNN" />
     <MESSAGE value="feat: utils for data" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: utils for data" />
+    <MESSAGE value="feat: word to vector" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: word to vector" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machine_learning$linear_regression.coverage" NAME="linear-regression Coverage Results" MODIFIED="1605681982468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studying-practices" />
@@ -451,8 +478,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="441">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lhy-DL-homeworks/hw4_RNN/data_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
