@@ -1,5 +1,8 @@
 dataset/
 **/data/
 **/__pycache__/
-.idea/
+**/.idea/
 **/*.model
+**/venv/
+**/*.csv
+**/*.csv.gz

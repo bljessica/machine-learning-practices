@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # big5为繁体中文字符标准
-data = pd.read_csv('./train.csv', encoding='big5');
+data = pd.read_csv('data/train.csv', encoding='big5');
 data = data.iloc[:, 3:]  # 取第三列及之后的数据
 data[data == 'NR'] = 0  # 值为NR则置0
 # print(data)
@@ -67,11 +67,11 @@ for t in range(iter_time):
     gradient = 2 * np.dot(x.transpose(), np.dot(x, w) - y)
     adagrad += gradient ** 2
     w = w - learing_rate * gradient / np.sqrt(adagrad + eps)
-np.save('weight.npy', w)
+np.save('data/weight.npy', w)
 print(w)
 
 # 测试集
-test_data = pd.read_csv('./test.csv', header=None, encoding='big5')
+test_data = pd.read_csv('data/test.csv', header=None, encoding='big5')
 test_data = test_data.iloc[:, 2:]
 test_data[test_data == 'NR'] = 0
 test_data = test_data.to_numpy()
@@ -85,13 +85,13 @@ for i in range(len(test_x)):
 test_x = np.concatenate((np.ones([240, 1]), test_x), axis=1).astype(float)
 print(test_x)
 
-w = np.load('weight.npy')
+w = np.load('data/weight.npy')
 ans_y = np.dot(test_x, w)
 print(ans_y)
 
 # 预测结果写入文件
 import csv
-with open('submit.csv', mode='w', newline='') as submit_file:
+with open('data/submit.csv', mode='w', newline='') as submit_file:
     csv_writer = csv.writer(submit_file)
     header = ['id', 'value']
     print(header)
