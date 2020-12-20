@@ -1,7 +1,7 @@
 import torch
 from gensim.models import Word2Vec
 
-class Process():
+class Preprocess():
     def __init__(self, sentences, sen_len, w2v_path='./w2v.model'):
         self.w2v_path = w2v_path
         self.sentences = sentences
