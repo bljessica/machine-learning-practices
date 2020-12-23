@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+import random
 
 class Encoder(nn.Module):
     def __init__(self, en_vocab_size, emb_dim, hid_dim, n_layers, dropout):
@@ -40,7 +41,7 @@ class Decoder(nn.Module):
         # input = [batch_size, vocab_size]
         # hidden = [batch_size, n_layers * directions, hid_dim]
         # decoder 只会是单向的，所以 directions = 1
-        input = input.unsqeeze(1) # 在第一维增加一个维度
+        input = input.unsqueeze(1) # 在第一维增加一个维度
         embedded = self.dropout(self.embedding(input))
         # embedded = [batch_size, 1, emb_dim]
         if self.isatt:
@@ -92,4 +93,57 @@ class Seq2seq(nn.Module):
         outputs = torch.zeros(batch_size, target_len, vocab_size).to(self.device)
         encoder_outputs, hidden = self.encoder(input)
         # encoder 的最终隐层 hidden state 用来初始化 decoder
-        hidden = hidden.view(self.encoder.n_layers, 2, )
+        # encoder_outputs 主要是用在 Attention
+        # 因为 encoder 是双向 RNN ，所以需要将同一层两个方向的 hidden_state 接在一起
+        # hidden = [num_layers * directions, batch_size, hid_dim] -> [num_layers, directions, bacth_size, hid_dim]
+        hidden = hidden.view(self.encoder.n_layers, 2, batch_size - 1)
+        hidden = torch.cat((hidden[:, -2, :, :], hidden[:, -1, :, :]), dim=2)
+        # 取 <BOS> 标识
+        input = target[:, 0]
+        preds = []
+        for t in range(1, target_len):
+            output, hidden = self.decoder(input, hidden, encoder_outputs)
+            outputs[:, t] = output
+            # 决定是否用正确答案做训练
+            teacher_force = random.random() # <= teatcher_forcing_ratio
+            # 取出几率最大的单词
+            top1 = output.argmax(1)
+            # 如果是 teacher_force 则用正解训练，反之用自己预测的单词做预测
+            input = target[:, t] if teacher_force and t < target_len else top1
+            preds.append(top1.unsqueeze(1))
+        preds = torch.cat(preds, 1)
+        return outputs, preds
+    
+    def inference(self, input, target):
+        # 进行 Beam Search
+        # 此函数的 batch_size = 1
+        # input = [batch_size, input_len, vocab_size]
+        # target = [batch_size, target_len, vocab_size]
+        batch_size = input.shape[0]
+        input_len = input.shape[1] # 取得最大字数
+        vocab_size = self.decoder.cn_vocab_size
+
+        # 准备一个储存空间来储存输出
+        outputs = torch.zeors(batch_size, input_len, vocab_size).to(self.device)
+        # 将输入放入 encoder 
+        encoder_outputs, hidden = self.encoder(input)
+        # encoder 最终的隐层用来初始化 decoder
+        # encoder_outputs 主要是用在 Attention
+        # 因为 encoder 是双向 RNN ，所以需要将同一层两个方向的 hidden_state 接在一起
+        # hidden = [num_layers * directions, batch_size, hid_dim] -> [num_layers, directions, bacth_size, hid_dim]
+        hidden = hidden.view(self.encoder.n_layers, 2, batch_size - 1)
+        hidden = torch.cat((hidden[:, -2, :, :], hidden[:, -1, :, :]), dim=2)
+        # 取 <BOS> 标识
+        input = target[:, 0]
+        preds = []
+        for t in range(1, input_len):
+            output, hidden = self.decoder(input, hidden, encoder_outputs)
+            # 将预测结果存起来
+            outputs[:, t] = output
+            # 取出几率最大的单词
+            top1 = output.argmax(1)
+            input = top1
+            preds.append(top1.unsqueeze(1))
+        preds = torch.cat(preds, 1)
+        return outputs, preds
+
